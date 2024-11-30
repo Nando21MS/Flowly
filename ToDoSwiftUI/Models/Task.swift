@@ -17,5 +17,5 @@ class Task: NSManagedObject, Identifiable {
         return NSFetchRequest<Task>(entityName: "Task")
     }
 }
-
+             
 
