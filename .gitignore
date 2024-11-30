@@ -1,0 +1,11 @@
+# Xcode
+*.xcworkspace
+*.xcuserstate
+*.xcodeproj/project.xcworkspace/
+# Pods
+/Pods/
+# Build
+/build/
+# User-specific files
+.DS_Store
+
