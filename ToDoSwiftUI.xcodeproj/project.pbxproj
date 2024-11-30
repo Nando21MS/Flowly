@@ -50,6 +50,21 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		B7421A8A2CFB683600C1AB07 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B7421A8B2CFB686200C1AB07 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B7E4C3F12CBEC30C00D58C87 /* PersistenceController.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		B7E4C3CD2CBE9B7200D58C87 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +84,8 @@
 		B7E4C3D82CBE9B7200D58C87 /* ToDoSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				B7421A8B2CFB686200C1AB07 /* Service */,
+				B7421A8A2CFB683600C1AB07 /* Helpers */,
 				B731D3852CC7ED9700D4EEF7 /* ViewModels */,
 				B7E4C3EB2CBEB58F00D58C87 /* Models */,
 				B7E4C3E92CBEB56500D58C87 /* View */,
@@ -76,7 +93,6 @@
 				B7E4C3DD2CBE9B7400D58C87 /* Assets.xcassets */,
 				B7E4C3DF2CBE9B7400D58C87 /* Preview Content */,
 				B7E4C3EE2CBEC10600D58C87 /* ToDoSwiftUIModel.xcdatamodeld */,
-				B7E4C3F12CBEC30C00D58C87 /* PersistenceController.swift */,
 			);
 			path = ToDoSwiftUI;
 			sourceTree = "<group>";
