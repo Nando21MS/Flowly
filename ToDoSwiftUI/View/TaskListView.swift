@@ -17,9 +17,18 @@ struct TaskListView: View {
                     NavigationLink(destination: TaskDetailView(
                         title: task.title ?? "",
                         details: task.details ?? "",
-                        reminderDate: task.reminderDate
-                    ) { newTitle, newDetails, newReminderDate in
-                        viewModel.updateTask(task: task, newTitle: newTitle, newDetails: newDetails, newReminderDate: newReminderDate)
+                        reminderDate: task.reminderDate,
+                        priority: task.priority ?? "Low", // Valor predeterminado para priority
+                        category: task.category ?? "Work" // Valor predeterminado para category
+                    ) { newTitle, newDetails, newReminderDate, newPriority, newCategory in
+                        viewModel.updateTask(
+                            task: task,              // Tarea a actualizar
+                            newTitle: newTitle,      // Nuevo título
+                            newDetails: newDetails,  // Nuevos detalles
+                            newReminderDate: newReminderDate, // Nueva fecha de recordatorio
+                            priority: newPriority,   // Nueva prioridad
+                            category: newCategory    // Nueva categoría
+                        )
                     }) {
                         VStack(alignment: .leading) {
                             Text(task.title ?? "No Title")
@@ -42,12 +51,21 @@ struct TaskListView: View {
                     NavigationLink(destination: TaskDetailView(
                         title: "",
                         details: "",
-                        reminderDate: nil
-                    ) { title, details, reminderDate in
-                        viewModel.addTask(title: title, details: details, reminderDate: reminderDate)
+                        reminderDate: nil,
+                        priority: "Low", // Valor predeterminado para priority
+                        category: "Work" // Valor predeterminado para category
+                    ) { title, details, reminderDate, priority, category in
+                        viewModel.addTask(
+                            title: title,         // Título de la nueva tarea
+                            details: details,     // Detalles de la nueva tarea
+                            reminderDate: reminderDate, // Fecha de recordatorio
+                            priority: priority,   // Prioridad de la nueva tarea
+                            category: category    // Categoría de la nueva tarea
+                        )
                     }) {
                         Image(systemName: "plus")
                     }
+
                 }
             }
         }

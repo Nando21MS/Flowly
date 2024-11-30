@@ -17,11 +17,13 @@ class TaskListViewModel: ObservableObject {
         self.fetchAllTasks()
     }
     
-    func addTask(title: String, details: String? = nil, reminderDate: Date? = nil) {
+    func addTask(title: String, details: String? = nil, reminderDate: Date? = nil, priority: String, category: String) {
         let task = Task(context: context)
         task.title = title
         task.details = details
         task.reminderDate = reminderDate
+        task.priority = priority
+        task.category = category
         saveContext()
         fetchAllTasks()
         
@@ -31,10 +33,12 @@ class TaskListViewModel: ObservableObject {
         }
     }
     
-    func updateTask(task: Task, newTitle: String, newDetails: String?, newReminderDate: Date?) {
+    func updateTask(task: Task, newTitle: String, newDetails: String?, newReminderDate: Date?, priority: String, category: String) {
         task.title = newTitle
         task.details = newDetails
         task.reminderDate = newReminderDate
+        task.priority = priority
+        task.category = category
         saveContext()
         fetchAllTasks()
         
@@ -98,4 +102,12 @@ class TaskListViewModel: ObservableObject {
             }
         }
     }
+    
+    
+    func toggleTaskCompletion(task: Task) {
+        task.isCompleted.toggle()  // Cambia el estado de la tarea
+        saveContext()              // Guarda los cambios en el contexto
+        fetchAllTasks()            // Actualiza la lista de tareas
+    }
+
 }
