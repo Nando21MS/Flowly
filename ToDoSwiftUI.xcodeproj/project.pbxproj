@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B71C944D2CFB710800577D45 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71C944C2CFB710800577D45 /* CalendarView.swift */; };
-		B71C944F2CFB713D00577D45 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71C944E2CFB713D00577D45 /* Calendar.swift */; };
 		B731D3872CC7EDD900D4EEF7 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B731D3862CC7EDD900D4EEF7 /* TaskListViewModel.swift */; };
 		B7E4C3DA2CBE9B7200D58C87 /* ToDoSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E4C3D92CBE9B7200D58C87 /* ToDoSwiftUIApp.swift */; };
 		B7E4C3DC2CBE9B7200D58C87 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E4C3DB2CBE9B7200D58C87 /* TaskListView.swift */; };
@@ -22,7 +21,6 @@
 
 /* Begin PBXFileReference section */
 		B71C944C2CFB710800577D45 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
-		B71C944E2CFB713D00577D45 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		B731D3862CC7EDD900D4EEF7 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 		B7E4C3D62CBE9B7200D58C87 /* ToDoSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7E4C3D92CBE9B7200D58C87 /* ToDoSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoSwiftUIApp.swift; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				B7E4C3EC2CBEB5C500D58C87 /* Task.swift */,
-				B71C944E2CFB713D00577D45 /* Calendar.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -199,7 +196,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B731D3872CC7EDD900D4EEF7 /* TaskListViewModel.swift in Sources */,
-				B71C944F2CFB713D00577D45 /* Calendar.swift in Sources */,
 				B7E4C3ED2CBEB5C500D58C87 /* Task.swift in Sources */,
 				B71C944D2CFB710800577D45 /* CalendarView.swift in Sources */,
 				B7E4C3DC2CBE9B7200D58C87 /* TaskListView.swift in Sources */,
