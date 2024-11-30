@@ -1,11 +1,10 @@
-# Xcode
-*.xcworkspace
+# Ignorar archivos de estado de Xcode
 *.xcuserstate
-*.xcodeproj/project.xcworkspace/
-# Pods
-/Pods/
-# Build
-/build/
-# User-specific files
-.DS_Store
+
+# Otros archivos temporales de Xcode
+*.xcworkspace
+xcuserdata/
+DerivedData/
+*.swp
+*.lock
 
