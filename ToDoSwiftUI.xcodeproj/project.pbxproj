@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B71C944D2CFB710800577D45 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71C944C2CFB710800577D45 /* CalendarView.swift */; };
 		B731D3872CC7EDD900D4EEF7 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B731D3862CC7EDD900D4EEF7 /* TaskListViewModel.swift */; };
 		B7E4C3DA2CBE9B7200D58C87 /* ToDoSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E4C3D92CBE9B7200D58C87 /* ToDoSwiftUIApp.swift */; };
 		B7E4C3DC2CBE9B7200D58C87 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E4C3DB2CBE9B7200D58C87 /* TaskListView.swift */; };
@@ -20,7 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B71C944C2CFB710800577D45 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		B731D3862CC7EDD900D4EEF7 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 		B7E4C3D62CBE9B7200D58C87 /* ToDoSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7E4C3D92CBE9B7200D58C87 /* ToDoSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoSwiftUIApp.swift; sourceTree = "<group>"; };
@@ -112,7 +110,6 @@
 			children = (
 				B7E4C3E72CBEA2A000D58C87 /* TaskDetailView.swift */,
 				B7E4C3DB2CBE9B7200D58C87 /* TaskListView.swift */,
-				B71C944C2CFB710800577D45 /* CalendarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -197,7 +194,6 @@
 			files = (
 				B731D3872CC7EDD900D4EEF7 /* TaskListViewModel.swift in Sources */,
 				B7E4C3ED2CBEB5C500D58C87 /* Task.swift in Sources */,
-				B71C944D2CFB710800577D45 /* CalendarView.swift in Sources */,
 				B7E4C3DC2CBE9B7200D58C87 /* TaskListView.swift in Sources */,
 				B7E4C3DA2CBE9B7200D58C87 /* ToDoSwiftUIApp.swift in Sources */,
 				B7E4C3F22CBEC30C00D58C87 /* PersistenceController.swift in Sources */,
